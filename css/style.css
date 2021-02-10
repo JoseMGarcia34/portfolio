@@ -362,13 +362,17 @@ footer,
 
 @media screen and (max-width: 970px) {
   
-  .iconos, .contacto, button {
-    width: 100%;
+  button {
+    width: 100%;    
   }
 
   .footer {
     padding-top: 80px;
   } 
+
+  .iconos {
+    justify-content: space-around;      
+  }
 
 }
 
