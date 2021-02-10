@@ -380,4 +380,9 @@ footer,
   height: 60px;
   }
 
+  img {
+    width: 85%;
+    height: auto;
+  }
+
 }
