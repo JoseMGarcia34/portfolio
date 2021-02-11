@@ -259,11 +259,11 @@ footer,
       transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 
-@media screen and (min-width: 980px) { 
+@media screen and (min-width: 1316px) { 
   
   .content {
     height: auto;
-  }
+  }  
 
   .footer {    
     justify-content: center;
@@ -356,6 +356,15 @@ footer,
   .col-95 {
     flex: 9.5;
   }
+}
+
+@media screen and (max-width: 1316px) {
+
+  svg {
+    width: 50px;
+    height: auto;
+  }
+
 }
 
 @media screen and (max-width: 970px) {
