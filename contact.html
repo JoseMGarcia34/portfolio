@@ -10,25 +10,31 @@
         <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     </head>
     <body>
-        <form action="contact.php" method="post" class="form_contact">
-            <h2>Envia un mensaje</h2>
-            <div class="user_info">
-                <label for="names">Nombre *</label>
-                <input type="text" id="names" name="nombre" required>
-
-                <label for="phone">Teléfono</label>
-                <input type="text" id="phone" name="telefono" required>
-
-                <label for="email">Correo electrónico *</label>
-                <input type="text" id="email" name="correo" required>
-
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <input type="submit" value="Enviar Mensaje" id="btnSend">
-            </div>
-        </form>
-    </body>
+      <div class="container row">
+        <div class="imagenPng col">
+          <img src="https://fotos.subefotos.com/e386955262963f6f56a3d1ce3c3b7662o.png" alt="contacto">
+        </div>
+        <div class="col">   
+          <form name="contact" class="form_contact" netlify>          
+              <div class="user_info">
+                <p>
+                  <label>Nombre <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Correo <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Mensaje:<textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <div class="botones">
+                  <button type="submit">Enviar</button><button><a href=index.html>Atrás</a></button>
+                  </div>
+                </p>
+              </div>
+          </form>
+        </div> 
+      </div>    
     <footer>
         <div class="footer row">
           <div class="iconos col">
