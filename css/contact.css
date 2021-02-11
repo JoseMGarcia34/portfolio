@@ -1,23 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 body {
-    background: #ededed;
+    background: #ededed;    
 }
 
-.form_contact, .user_info {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+  justify-content: space-between;
+}
+
+.imagenPng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;  
+}
+
+.col {
+  flex-basis: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;  
+}
+
+.form_contact {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-top: 10vh;
+    height: 80vh;             
+  }
+
+  .user_info {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;                
   }
   
-  input[type=text], input, select, textarea {
+  input, textarea {
     font-size: 0.9em;
-    width: 50%; 
+    width: 100%; 
     padding: 12px; 
-    border: #24B98C 3px solid; 
+    border: #018B8A 3px solid; 
     border-radius: 20px; 
     box-sizing: border-box; 
     margin-top: 6px; 
@@ -28,20 +57,33 @@ body {
     outline: none;
   }
   
+  .botones {
+    display: flex;    
+    justify-content:space-around;
+    width: 100%;    
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+  }
   
-  input[type=submit] {
-    background-color: #24B98C;
-    color: white;
+  button {
+    background-color: #018B8A;
+    color: rgb(247, 247, 247);
     padding: 12px 20px;
     border: none;
     border-radius: 9px;
     cursor: pointer;
-    width: 200px;
+    width: 25%;
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
   }
   
-  input[type=submit]:hover {
-    background:#24B98C;
+  button:hover {
+    background:#02b8b8;
+    color: rgb(61, 61, 61);
   }
 
   label, h2 {
@@ -74,4 +116,133 @@ svg {
   svg:hover {
     transform:scale(1.25);  
   }
+
+  @media screen and (min-width: 980px) { 
+  
+    .content {
+      height: auto;
+    }    
+  
+    .footer {    
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+   
+    .col {
+      flex: 1;
+    }
+   
+    .col-05 {
+      flex: 0.5;
+    }
+  
+    .col-10 {
+      flex: 1;
+    }
+  
+    .col-15 {
+      flex: 1.5;
+    }
+    
+    .col-20 {
+      flex: 2;
+    }
+    
+    .col-25 {
+      flex: 2.5;
+    }
+    
+    .col-30 {
+      flex: 3;
+    }
+    
+    .col-35 {
+      flex: 3.5;
+    }
+  
+    .col-40 {
+      flex: 4;
+    }
+    
+    .col-45 {
+      flex: 4.5;
+    }
+    
+    .col-50 {
+      flex: 5;
+    }
+    
+    .col-55 {
+      flex: 5.5;
+    }
+    
+    .col-60 {
+      flex: 6;
+    }
+    
+    .col-65 {
+      flex: 6.5;
+    }
+    
+    .col-70 {
+      flex: 7;
+    }
+    
+    .col-75 {
+      flex: 7.5;
+    }
+    
+    .col-80 {
+      flex: 8;
+    }
+    
+    .col-85 {
+      flex: 8.5;
+    }
+    
+    .col-90 {
+      flex: 9;
+    }
+    
+    .col-95 {
+      flex: 9.5;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  .user_info {
+    padding-top: 0;
+    justify-content: start;
+  }
+
+  input, textarea {
+    font-size: 0.9em;
+    width: 100%; 
+    padding: 12px; 
+    border: #018B8A 3px solid; 
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    margin-top: 2px; 
+    margin-bottom: 10px; 
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;  
+    outline: none;
+  }
+
+  }
+
   
